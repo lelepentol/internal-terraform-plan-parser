@@ -52,10 +52,10 @@ export interface ParseResult {
   changedDataSources: Array<Changed>;
 }
 
-const NO_CHANGES_STRING = '\nNo changes. Infrastructure is up-to-date.\n';
-const CONTENT_START_STRING = '\nTerraform will perform the following actions:\n';
+const NO_CHANGES_STRING = '\nNo changes. Your infrastructure matches the configuration.\n';
+const CONTENT_START_STRING = '\nTerraform planned the following actions,';
 const CONTENT_END_STRING = '\nPlan:';
-const OLD_NEW_SEPARATOR = ' => ';
+const OLD_NEW_SEPARATOR = ' -> ';
 const ATTRIBUTE_FORCES_NEW_RESOURCE_SUFFIX = ' (forces new resource)';
 
 /**
